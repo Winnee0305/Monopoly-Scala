@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="819.0" prefWidth="885.0" spacing="20.0" styleClass="transparent-container" stylesheets="@MainTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="170.0" prefWidth="865.0" spacing="10.0" styleClass="info-container4">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/about.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER_LEFT" prefHeight="139.0" prefWidth="702.0" spacing="10.0">
+               <children>
+                  <Label text="things you should know">
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="title2" />
+                        <String fx:value="title-container" />
+                     </styleClass>
+                  </Label>
+                  <Label prefHeight="33.0" prefWidth="692.0" style="-fx-alignment: center-left;" text="This Monopoly game is designed for 2 players. " wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-left-align" />
+                     </styleClass>
+                  </Label>
+                  <Label prefHeight="60.0" prefWidth="692.0" text="The goal is to bankrupt your opponent by strategically buying properties and charging rent, ultimately leading to their financial downfall." wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-left-align" />
+                     </styleClass>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" right="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="170.0" prefWidth="865.0" spacing="10.0" styleClass="info-container4">
+         <children>
+            <VBox alignment="CENTER_RIGHT" prefHeight="79.0" prefWidth="789.0" spacing="10.0">
+               <children>
+                  <Label text="game setup" textAlignment="RIGHT">
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="title2" />
+                        <String fx:value="title-container" />
+                     </styleClass>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="692.0" style="-fx-alignment: center-right;" text="Find 2 players for your game." wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-right-align" />
+                     </styleClass></Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="692.0" text="Allow each player to select a token to represent them." wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-right-align" />
+                     </styleClass>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="33.0" prefWidth="692.0" text="Give each player $1,000 to start." wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-right-align" />
+                     </styleClass>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" right="10.0" />
+               </HBox.margin>
+            </VBox>
+            <ImageView fitHeight="80.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/setup.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="170.0" prefWidth="865.0" spacing="10.0" styleClass="info-container4">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/newGame.png" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER_LEFT" prefHeight="139.0" prefWidth="702.0" spacing="10.0">
+               <children>
+                  <Label text="game play">
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="title2" />
+                        <String fx:value="title-container" />
+                     </styleClass>
+                  </Label>
+                  <Label prefHeight="33.0" prefWidth="692.0" text="Roll the dice and move your game piece." wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-left-align" />
+                     </styleClass>
+                  </Label>
+                  <Label prefHeight="33.0" prefWidth="692.0" text="Buy an unowned property when you land on it if you’d like." wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-left-align" />
+                     </styleClass>
+                  </Label>
+                  <Label prefHeight="33.0" prefWidth="692.0" text="Collect (or pay) rent when a player lands on owned property." wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-left-align" />
+                     </styleClass>
+                  </Label>
+                  <Label prefHeight="33.0" prefWidth="692.0" text="Collect $200 whenever you pass the GO square." wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-left-align" />
+                     </styleClass>
+                  </Label>
+                  <Label prefHeight="33.0" prefWidth="692.0" text="Take a Chance or Community Chest card when instructed to." wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-left-align" />
+                     </styleClass>
+                  </Label>
+                  <Label prefHeight="33.0" prefWidth="692.0" text="Go to jail when you’re instructed to." wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-left-align" />
+                     </styleClass>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" right="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="170.0" prefWidth="865.0" spacing="10.0" styleClass="info-container4">
+         <children>
+            <VBox alignment="CENTER_RIGHT" prefHeight="108.0" prefWidth="723.0" spacing="10.0">
+               <children>
+                  <Label text="ending game" textAlignment="RIGHT">
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="title2" />
+                        <String fx:value="title-container" />
+                     </styleClass>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="692.0" text="Set a time limit of number of rounds to determine the winner who with higher assets value." wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-right-align" />
+                     </styleClass>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="692.0" text="Or one of the player have bankrupt (unable to settle the payment)." wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-right-align" />
+                     </styleClass>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="692.0" text="The winner records will be stored in the leaderboard." wrapText="true">
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="text-right-align" />
+                     </styleClass>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="30.0" right="10.0" />
+               </HBox.margin>
+            </VBox>
+            <ImageView fitHeight="80.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/rich.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+   <effect>
+      <DropShadow color="#0000004f" spread="0.3" />
+   </effect>
+</VBox>

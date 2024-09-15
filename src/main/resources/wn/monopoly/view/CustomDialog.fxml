@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="521.0" spacing="20.0" style="-fx-border-width: 10;" styleClass="info-container3" stylesheets="@MainTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wn.monopoly.view.CustomDialogController">
+   <children>
+      <ImageView fx:id="msgIcon" fitHeight="121.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="msgLabel" lineSpacing="5.0" style="-fx-font-size: 14;" styleClass="main-text" text="Label" wrapText="true" />
+      <HBox alignment="CENTER" prefHeight="49.0" prefWidth="481.0" spacing="20.0">
+         <children>
+            <Button fx:id="backHomeButton" mnemonicParsing="false" onAction="#handleBackHome" prefHeight="38.0" prefWidth="190.0" text="Back to Home">
+               <styleClass>
+                  <String fx:value="button-r" />
+                  <String fx:value="game-button" />
+               </styleClass>
+            </Button>
+            <Button fx:id="continueButton" mnemonicParsing="false" onAction="#handleContinue" prefHeight="38.0" prefWidth="190.0" text="Continue">
+               <styleClass>
+                  <String fx:value="button-g" />
+                  <String fx:value="game-button" />
+               </styleClass>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <effect>
+      <DropShadow radius="10.0625" width="21.25" />
+   </effect>
+</VBox>

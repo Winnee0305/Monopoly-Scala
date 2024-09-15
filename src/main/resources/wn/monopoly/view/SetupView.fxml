@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="880.0" spacing="8.0" stylesheets="@MainTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wn.monopoly.view.SetupViewController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="160.0" prefWidth="880.0" spacing="10.0" styleClass="info-container">
+         <children>
+            <Label styleClass="title3" text="Game Setup" />
+            <VBox alignment="CENTER" prefHeight="84.0" prefWidth="819.0" spacing="2.0" styleClass="info-container">
+               <children>
+                  <Label styleClass="title3" text="Select Number of Rounds" />
+                  <Label style="-fx-font-size: 12;" styleClass="main-text" text="(A player who has the highest assets will be the winner, or if one of the players goes bankrupt.)" />
+                  <HBox alignment="CENTER" prefHeight="23.0" prefWidth="788.0" spacing="20.0">
+                     <children>
+                        <RadioButton fx:id="round30" mnemonicParsing="false" onAction="#handleRound" styleClass="round-label" text="30 Rounds">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="round60" mnemonicParsing="false" onAction="#handleRound" styleClass="round-label" text="60 Rounds" />
+                        <RadioButton fx:id="round90" mnemonicParsing="false" onAction="#handleRound" styleClass="round-label" text="90 Rounds" />
+                        <RadioButton fx:id="round120" mnemonicParsing="false" onAction="#handleRound" styleClass="round-label" text="120 Rounds" />
+                     </children>
+                     <padding>
+                        <Insets bottom="4.0" top="12.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="526.0" prefWidth="373.0" spacing="10.0" styleClass="info-container">
+         <children>
+            <Label styleClass="title3" text="Player Setup" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Label styleClass="main-text" text="Player 1" />
+                        <ImageView fx:id="player1Img" fitHeight="85.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+                        <TextField fx:id="player1Name" prefHeight="24.0" prefWidth="345.0" promptText="Enter Player 1 Name" styleClass="input-field" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <RadioButton fx:id="player1TokenOpt1" mnemonicParsing="false" onAction="#handlePlayer1Token">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/token1.PNG" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RadioButton>
+                              <RadioButton fx:id="player1TokenOpt2" mnemonicParsing="false" onAction="#handlePlayer1Token">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/token1.PNG" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RadioButton>
+                              <RadioButton fx:id="player1TokenOpt3" mnemonicParsing="false" onAction="#handlePlayer1Token">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/token1.PNG" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RadioButton>
+                              <RadioButton fx:id="player1TokenOpt4" mnemonicParsing="false" onAction="#handlePlayer1Token">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/token1.PNG" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RadioButton>
+                              <RadioButton fx:id="player1TokenOpt5" mnemonicParsing="false" onAction="#handlePlayer1Token">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/token1.PNG" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RadioButton>
+                           </children>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="info-container" />
+                     </styleClass>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Label styleClass="main-text" text="Player 2" />
+                        <ImageView fx:id="player2Img" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+                        <TextField fx:id="player2Name" promptText="Enter Player 2 Name" styleClass="input-field" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <RadioButton fx:id="player2TokenOpt1" mnemonicParsing="false" onAction="#handlePlayer2Token">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/token1.PNG" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RadioButton>
+                              <RadioButton fx:id="player2TokenOpt2" mnemonicParsing="false" onAction="#handlePlayer2Token">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/token1.PNG" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RadioButton>
+                              <RadioButton fx:id="player2TokenOpt3" mnemonicParsing="false" onAction="#handlePlayer2Token">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/token1.PNG" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RadioButton>
+                              <RadioButton fx:id="player2TokenOpt4" mnemonicParsing="false" onAction="#handlePlayer2Token">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/token1.PNG" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RadioButton>
+                              <RadioButton fx:id="player2TokenOpt5" mnemonicParsing="false" onAction="#handlePlayer2Token">
+                                 <graphic>
+                                    <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../images/token1.PNG" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </RadioButton>
+                           </children>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="main-text" />
+                        <String fx:value="info-container" />
+                     </styleClass>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="startButton" mnemonicParsing="false" onAction="#handleStartGame" prefHeight="38.0" prefWidth="195.0" text="Start Game">
+               <styleClass>
+                  <String fx:value="game-button" />
+                  <String fx:value="button-g" />
+               </styleClass>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

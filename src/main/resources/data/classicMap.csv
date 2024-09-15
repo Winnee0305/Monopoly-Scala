@@ -1,0 +1,41 @@
+name,type,x,y
+base,base,30,0
+mediterranean avenue,property,-50,0
+community chest,chest,-100,0
+baltic avenue,property,-150,0
+income tax,tax,-203,0
+reading railroad,railroad,-255,0
+oriental avenue,property,-305,0
+chance,chance,-360,0
+vermont avenue,property,-410,0
+connecticut avenue,property,-463,0
+jail,jail,-553,0
+st. charles place,property,-553,-70
+electric company,utility,-553,-120
+states avenue,property,-553,-172
+virginia avenue,property,-553,-225
+pennsylavania railroad,railroad,-553,-275
+st. james place,property,-553,-328
+community chest,chest,-553,-380
+tennessee avenue,property,-553,-432
+new york avenue,property,-553,-485
+free parking,freeparking,-553,-555
+kentuky avenue,property,-462,-555
+chance,chance,-410,-555
+indiana avenue,property,-360,-555
+illinois avenue,property,-310,-555
+b & o railroad,railroad,-255,-555
+atlantic avenue,property,-203,-555
+ventnor avenue,property,-150,-555
+water works,utility,-100,-555
+marvin gardens,property,-48,-555
+go to jail,prejail,30,-555
+pacific avenue,property,30,-485
+north carolina avenue,property,30,-432
+community chest,chest,30,-380
+pennsylavania avenue,property,30,-328
+short line,railroad,30,-275
+chance,chance,30,-225
+park place,property,30,-170
+luxury tax,tax,30,-120
+board walk,property,30,-70

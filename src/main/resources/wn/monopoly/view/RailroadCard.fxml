@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="254.0" prefWidth="200.0" styleClass="card-background" stylesheets="@MainTheme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wn.monopoly.view.RailroadCardController">
+   <children>
+      <VBox layoutX="39.0" layoutY="15.0" prefHeight="254.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane gridLinesVisible="true" prefHeight="254.0" prefWidth="200.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <GridPane.margin>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                     </GridPane.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="61.0" prefWidth="176.0">
+                           <children>
+                              <ImageView fx:id="utilityImage" fitHeight="77.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/train.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <Line endX="70.0" startX="-90.0">
+                           <VBox.margin>
+                              <Insets left="6.0" right="6.0" />
+                           </VBox.margin>
+                        </Line>
+                        <Label fx:id="name" alignment="CENTER" prefHeight="94.0" prefWidth="176.0" wrapText="true">
+                           <styleClass>
+                              <String fx:value="utility-card-title" />
+                              <String fx:value="text-center-align" />
+                           </styleClass>
+                        </Label>
+                        <Line endX="70.0" startX="-90.0">
+                           <VBox.margin>
+                              <Insets left="6.0" right="6.0" />
+                           </VBox.margin>
+                        </Line>
+                        <HBox alignment="CENTER" prefHeight="17.0" prefWidth="176.0">
+                           <children>
+                              <Label text="Price  ">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="price">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <GridPane prefHeight="97.0" prefWidth="176.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="138.0" minWidth="10.0" prefWidth="127.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.5" minWidth="10.0" prefWidth="29.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Rent">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass></Label>
+                              <Label fx:id="rent" GridPane.columnIndex="1">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass></Label>
+                              <Label text="If 2 railroads are owned" GridPane.rowIndex="1">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="rent3" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="rent2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass>
+                              </Label>
+                              <Label text="If 3 railroads are owned" GridPane.rowIndex="2">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass>
+                              </Label>
+                              <Label text="if 4 railroads are owned" GridPane.rowIndex="3">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="rent4" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="6.0" left="10.0" right="10.0" />
+                           </padding>
+                        </GridPane>
+                        <HBox alignment="TOP_CENTER" prefHeight="35.0" prefWidth="176.0">
+                           <children>
+                              <Label text="Mortgage Value  ">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="mortgage">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="35.0" prefWidth="176.0">
+                           <children>
+                              <Label text="Owner:  ">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="owner">
+                                 <styleClass>
+                                    <String fx:value="card-text" />
+                                    <String fx:value="text-12" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
